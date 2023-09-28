@@ -63,9 +63,24 @@
            <li class="nav-item">
                 <a href="./index.php?page=reports" class="nav-link nav-reports">
                   <i class="fas fa-th-list nav-icon"></i>
-                  <p>Report</p>
+                  <p>
+                    Report
+                  <i class="right fas fa-angle-left"></i>
+                  </p>
+                  <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="./index.php?page=Reports" class="nav-link nav-new_user tree-item">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p>Project Progress</p>
                 </a>
           </li>
+          <li class="nav-item">
+                <a href="./index.php?page=financial_report" class="nav-link nav-user_list tree-item">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p>Project Financial Report</p>
+                </a>
+              </li>
+                  </ul>
           <?php endif; ?>
           <?php if($_SESSION['login_type'] == 1): ?>
           <li class="nav-item">
@@ -85,6 +100,31 @@
               </li>
               <li class="nav-item">
                 <a href="./index.php?page=user_list" class="nav-link nav-user_list tree-item">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p>List</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-edit_project nav-view_project">
+              <i class="nav-icon fas fa-money-bill"></i>
+              <p>
+                Finance
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+                <ul class="nav nav-treeview">
+            <?php if($_SESSION['login_type'] != 3): ?>
+              <li class="nav-item">
+                <a href="./index.php?page=finance" class="nav-link nav-finance tree-item">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p>Add New</p>
+                </a>
+              </li>
+            <?php endif; ?>
+              <li class="nav-item">
+                <a href="./index.php?page=financial_list" class="nav-link nav-financial_list tree-item">
                   <i class="fas fa-angle-right nav-icon"></i>
                   <p>List</p>
                 </a>

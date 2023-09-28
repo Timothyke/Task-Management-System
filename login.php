@@ -7,6 +7,7 @@ include('./db_connect.php');
   // if(!isset($_SESSION['system'])){
 
     $system = $conn->query("SELECT * FROM system_settings")->fetch_array();
+    // var_dump($system); exit;
     foreach($system as $k => $v){
       $_SESSION['system'][$k] = $v;
     }

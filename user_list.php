@@ -2,7 +2,7 @@
 <div class="col-lg-12">
 	<div class="card card-outline card-success">
 		<div class="card-header">
-			<div class="card-tools">
+			<!--<div class="card-tools">-->
 				<a class="btn btn-block btn-sm btn-default btn-flat border-primary" href="./index.php?page=new_user"><i class="fa fa-plus"></i> Add New User</a>
 			</div>
 		</div>

@@ -81,5 +81,13 @@ if($action == 'get_report'){
 	if($get)
 		echo $get;
 }
+ 
+ 
 ob_end_flush();
 ?>
+
+
+
+
+
+ 
